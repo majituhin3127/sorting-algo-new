@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorting Algo Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SORTING ALGO VISUALIZER</h1>
+  </header>
+
+  <section id="input-section">
+    <label for="user-array">Enter numbers (comma-separated):</label>
+    <input type="text" id="user-array" placeholder="e.g. 5,3,8,1,2">
+    <button id="set-array-btn">Set Array</button>
+    <p id="current-array">Current array: <em>not set</em></p>
+  </section>
+
+  <nav id="algo">
+    <button onclick="runBubbleSort()">BUBBLE SORT</button>
+    <button onclick="runSelectionSort()">SELECTION SORT</button>
+    <button onclick="runInsertionSort()">INSERTION SORT</button>
+  </nav>
+
+  <main>
+    <div id="output"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
